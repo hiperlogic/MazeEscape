@@ -25,6 +25,7 @@ onready var raycasts = {
 # Animates using tween
 ###
 func move(dir):
+	print_debug("moving "+dir)
 	$AnimationPlayer.playback_speed = speed
 	facing = dir
 	if raycasts[facing].is_colliding():
